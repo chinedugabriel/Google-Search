@@ -1,8 +1,7 @@
 body{
     padding:0px;
     margin:0px;
-    min-height: 100vh;
-    width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,10 @@ body{
 
 /* starting of Nav Section */
 nav{
-   padding:0px 20px;
+   /* padding-right:20px; */
+   /* border: 1px solid green; */
+   position: absolute;
+   right: 10px;
 }
 nav>ul{
     display: flex;
@@ -32,7 +34,6 @@ nav>ul>li>a{
 nav>ul>li>div.iconP{
     display: flex;
     gap:1px;
-    flex-direction: ;
     height:11px;
 
 }
@@ -59,61 +60,56 @@ nav>ul>li>button{
     font-size:large;
 }
 body>section{
-    height:60vh;
     width: 100%;
-    text-align: center;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body>section>div.container>div#logo>img{
-    height:110px;
-    width:330px;
+body>section>div.container div#logo>img{
+    width:310px;
     margin: 10px;
 }
 body>section>div.container{
-    height:100%;
-    width: 100%;
     text-align: center;
-    display: inline-block;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    align-content: center;
-    /* padding: 200px; */
+    /* border: 1px solid red; */
+}
+body>section>div.container>.wrap{
+    /* border: 1px solid red; */
+    height: 18rem;
+    display: flex;
+    flex-flow: column nowrap;
 }
 /* Ending of Nav section */
 
 /* Section Starting */
 section>div.container>div>form{
-    height: 100%;
+    /* border: 1px solid red; */
+    height: 18rem;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     
 
 }
 section>div.container>div>form>div.form-group{
     width:582px;
-    height: 44px;
+    height: 41px;
     border: 1.5px solid #cccccc;
     border-radius: 25px;
     display:flex;
-    /* gap: 10px; */
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
-    padding:0px 3px;
-
 }
 
 section>div.container>div>form>div.form-group>img#search-icon{
-    height:20px;
     width: 27px;
 }
 section>div.container>div>form>div.form-group>img#mic-icon{
-    height:20px;
     width: 22px;
 }
 /* end of icon for form */
@@ -137,9 +133,11 @@ section>div.container>div>form>div{
 section>div.container>div>form>div>button{
     height:36px;
     width: 142px;
-    margin: 11px 4px;
     border: none;
     border-radius:5px;
+}
+section>div.container>div>form>div.section-lang{
+    font-size: 12px;
 }
 
 section>div.container>div>form>div.section-lang>ul{
@@ -153,68 +151,68 @@ section>div.container>div>form>div.section-lang>ul>li>a{
     text-decoration: none;
 }
 
-section{
-    margin-top: auto;
-    /* this was done to possition the section at middle since the body is displayed as flex */
-}
+
 /* Ending of Section */
 
 /* Footer Section */
 footer{
     margin-top: auto;
     background-color: #dededf;
+    font-size: 14px;
 }
 
 footer>div.country{
     border-bottom:1px solid #a0a0a0;
-    padding: 5px 0px 0px 10px;
-    /* width: 1910px; */
+    padding: 5px 0px 0px 15px;
     height: 48px !important;
     
+}
+div.footer{
+    display: flex;
+    justify-content: center;
 }
 
 div.footer>div.section-ads{
     display: flex;
     align-items: baseline;
-    /* width: 100%; */
- 
+    justify-content: space-between;
+    align-content: center;
+    width: 98%;
 }
 
 div.section-ads a{
     text-decoration: none;
-    margin-right: 10px;
+    color: #202020;
 }
 
 div.footer>div.section-ads ul{
   list-style-type: none;
   display: flex;
-  gap: 15px;
-  margin: 0px;
+  gap: 19px;
+  padding-right: 7px;
 }
 
 div.footer>div.section-ads>div.row1{
-  flex:1;
+
 }
 
 div.footer>div.section-ads>div.row2{
-    flex:1;
-    text-align: center;
     
 }
 
 div.footer>div.section-ads>div.row3{
-    flex:1;
-    text-align: right;
-   
 }
 
 div.footer>div.section-ads>div.row1>ul{
-    justify-content: start;
-    padding: 0px 0px 0px 10px;
+    /* text-align: left; */
 }
 
 div.footer>div.section-ads>div.row3>ul{
-    padding-right: 10px !important;
-    justify-content: end;
+    /* padding-right: 10px !important; */
+    /* justify-content: end; */
    
+}
+
+img.gleaf{
+    height: 15px;
 }
